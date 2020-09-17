@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="8dp"
+    android:layout_margin="6dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp">
+
+
+        <ImageView
+            android:id="@+id/iv_menu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_drop_down"
+            android:layout_centerHorizontal="true"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_todoName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_menu"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:text="Title"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

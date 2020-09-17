@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/ic_appBarItem"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/ic_toolbar_item"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="#FFF"
+            app:titleTextColor="@android:color/black"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ic_appBarItem"
+        android:layout_above="@+id/nav_view" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFF">
+
+        <TextView
+            android:id="@+id/tasks_no"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="8 TASKS"
+            android:textColor="@color/color_blue"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:layout_marginLeft="18dp"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/ic_add_item"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="ADD ITEMS +"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:textColor="@color/color_blue"
+            android:layout_marginRight="18dp"
+            android:textSize="16dp"/>
+
+    </com.google.android.material.navigation.NavigationView>
+
+</RelativeLayout>
