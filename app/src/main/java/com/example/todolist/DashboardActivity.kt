@@ -34,7 +34,7 @@ class DashboardActivity : AppCompatActivity() {
         setContentView(R.layout.activity_dashboard)
 
         dbHandler = DBHandler(this)
-        rv_dashborad.layoutManager = StaggeredGridLayoutManager(2,LinearLayoutManager.VERTICAL)
+        rv_dashborad.layoutManager = GridLayoutManager(applicationContext,2)
 
         ic_fab_btn.setOnClickListener {
             val dialog = AlertDialog.Builder(this)
